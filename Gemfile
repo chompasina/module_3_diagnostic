@@ -24,6 +24,9 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do

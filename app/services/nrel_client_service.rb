@@ -1,0 +1,3 @@
+class NrelClientService
+  
+end

@@ -22,3 +22,5 @@
 # Ignore vcr cassettes
 /spec/vcr_cassettes
 
+coverage
+
