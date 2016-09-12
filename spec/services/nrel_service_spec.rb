@@ -21,7 +21,13 @@ RSpec.describe NrelClientService, vcr: true do
       click_button "Locate"
       
       expect(current_path).to eq("/search")
-      expect(current_path).to have_content("zip=80203")
+      expect(current_path).to eq("/search?zip=80203")
+      expect(json.count).to eq(10)
+      expect(page).to have_content("Name")
+      expect(page).to have_content("Address")
+      expect(page).to have_content("Fuel Types")
+      expect(page).to have_content("Distance")
+      expect(page).to have_content("Access Times")
     
     end
   end
